@@ -1,0 +1,58 @@
+1. prompt("Masukan Angka")
+
+
+var score = 20;
+if(score >= 85 && < 100) {
+  console.log("Grade A");
+}
+else if
+  (score >= 75 && <= 84) {
+    console.log("Grade B");
+  }
+ else if(score >= 65 && <= 74) {
+    console.log("Grade C");
+  }
+  else if(score  >= 55 && <=64 ) {
+    console.log("Grade D");
+  } 
+  else (score  >= 0 && <=54 ) {
+    console.log("Grade E");
+  }
+
+2. 
+var penumpang = 0;
+var kecepatan = 0;
+var penumpang =prompt("Berapa total penumpang")
+penumpang = Number(penumpang);
+
+if (penumpang <= 2){
+  console.log(kecepatan);
+}
+else {
+ if (penumpang === 3){
+  console.log(kecepatan - 5);
+}
+else {
+  if(penumpang === 4){
+  console.log(kecepatan - 7);
+    } 
+  } 
+}
+
+3. set nama = andre
+   set password = 123
+   set islogin = false
+   role = admin,superadmin,anggota
+
+if nama && password = true
+ set islogin = false
+ DO" anda berhasil login "
+else DO" anda gagal login "
+
+if islogin = true
+DO " pick Role "
+if role = admin or superadmin
+Display " you have all access as (role)" else
+Display " you have retstricted as (role)"
+ 
+  
