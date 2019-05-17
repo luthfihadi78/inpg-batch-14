@@ -21,7 +21,7 @@ else if
 
 2. 
 var penumpang = 0;
-var kecepatan = 0;
+var kecepatan = 20;
 var penumpang =prompt("Berapa total penumpang")
 penumpang = Number(penumpang);
 
