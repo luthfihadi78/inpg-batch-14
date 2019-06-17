@@ -1,0 +1,88 @@
+1.
+
+var score = prompt("Masukan Angka");
+score = Number(score);
+
+
+if(score >= 85 && score <= 100) {
+  console.log("Grade A");
+}
+else {
+  if (score >= 75 && score <= 84) {
+    console.log("Grade B");
+  }
+ else {
+   if(score >= 65 && score <= 74) {
+    console.log("Grade C");
+  }
+  else{
+     if(score  >= 55 && score <=64 ) {
+    console.log("Grade D");
+  } 
+  else {
+    if(score  >= 0 && score <=54 ){
+    console.log("Grade E");
+      }
+       else{ 
+     console.log("Masukkan Nilai 1 - 100")
+     }
+    }
+  }
+ }
+}
+
+
+/*Selesai*/
+
+2. 
+var perlambatan
+var kecepatan = 20;
+var penumpang =prompt("Berapa total penumpang");
+
+if (penumpang <= 4) {
+  if (penumpang <= 2){
+  Perlambatan ="2";
+}
+else if (penumpang == 3){
+  Perlambatan ="5";
+}
+else if(penumpang == 4){
+  Perlambatan = "7";
+    } 
+KecepatanAkhir = kecepatan - Perlambatan;
+  console.log("Kecepatan Becak saat ini " +  KecepatanAkhir + "KM");
+
+  }  else {
+    alert("Maksimum Jumlah Penumpang 4");
+}
+
+/*Selesai*/
+
+
+3.  var nama = "andre";
+   var password = 123;
+   var islogin = false;
+
+
+name = prompt("Masukkan Nama Anda");
+password = prompt("Masukkan Password Anda");
+
+if(name == nama && password == 123){
+	islogin = true;
+console.log("Anda Berhasil Login");
+
+role = prompt("Masukkan Role anda");
+
+if(role === "admin" || role === "superadmin"){
+console.log(" You have all access as " + role)
+}
+else{
+console.log(" You have restricted access as " + role)
+  }
+}
+else{
+console.log(" Anda Gagal Login ");
+}
+
+/*selesai*/
+  
