@@ -1,0 +1,15 @@
+1. sebuah restoran dapat menampung 50 orang 
+   setiap meja hanya dapat menampung 3 orang
+
+tugas:
+hitung sisa orang yang tidak duduk dan berapa meja yang terpakai?
+
+2.Looping angka dari 1 - 50 dan tampilkan angkanya gunakan while dan for loop.
+
+3. tampilkan 1-100 namun tampilkan angka ganjil dan genap disebelah angkanya
+gunakan while dan for loop.
+
+4. Buat Looping angka 0 - 30 dengan incremental +3
+   jika angka habis dibagi 15 tampilkan HACKFOX
+   jika angka habis dibagi 6 tampilkan HACK
+   jika angka habis dibagi 3 tampilkan FOX
