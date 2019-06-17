@@ -1,0 +1,171 @@
+
+1. function GetGrade(score){
+  var Grade;
+
+if(score >= 85 && score <= 100) {
+  console.log("Grade A");
+}
+else {
+  if (score >= 75 && score <= 84) {
+    console.log("Grade B");
+  }
+ else {
+   if(score >= 65 && score <= 74) {
+    console.log("Grade C");
+  }
+  else{
+     if(score  >= 55 && score <=64 ) {
+    console.log("Grade D");
+  } 
+  else {
+    if(score  >= 0 && score <=54 ){
+    console.log("Grade E");
+      }
+       else{ 
+     console.log("Masukkan Nilai 1 - 100")
+     }
+    }
+  }
+ }
+}
+  return Grade
+}
+
+var score = prompt("Masukan Angka");
+var hasil = GetGrade(score);
+console.log(hasil);
+
+
+2. function Becak(penumpang,kecepatan =20){
+var perlambatan;
+
+if (penumpang <= 4) {
+  if (penumpang <= 2){
+  Perlambatan ="2";
+}
+else if (penumpang == 3){
+  Perlambatan ="5";
+}
+else if(penumpang == 4){
+  Perlambatan = "7";
+    } 
+KecepatanAkhir = kecepatan - Perlambatan;
+  console.log("Kecepatan Becak saat ini " +  KecepatanAkhir + " KM");
+
+  }  else {
+    alert("Maksimum Jumlah Penumpang 4");
+ }
+}
+var penumpang =prompt("Berapa total penumpang");
+var Hasil = Becak(penumpang);
+console.log(Hasil);
+
+3. 
+
+
+function login(nama,password,islogin){
+
+var nama = "andre";
+var password = 123;
+var islogin = false;
+
+
+if(name == nama && password == 123){
+	islogin = true;
+console.log("Anda Berhasil Login");
+
+if(role === "admin" || role === "superadmin"){
+console.log(" You have all access as " + role)
+}
+else{
+console.log(" You have restricted access as " + role)
+  }
+}
+else{
+console.log(" Anda Gagal Login ");
+  }
+}
+name = prompt("Masukkan Nama Anda");
+password = prompt("Masukkan Password Anda");
+role = prompt("Masukkan Role anda");
+var akhir = login(name,password,role);
+console.log(akhir);
+
+
+4. function GanjilGenap(nilai1,nilai2){
+var nilai;
+var hasil;
+
+if(nilai1 <= nilai2){
+  for(nilai = nilai1; nilai <= nilai2; nilai++){
+  if( nilai % 2 != 0){  
+  hasil = console.log( nilai +  "= Angka Ganjil");
+  }
+  else {  
+  hasil = console.log( nilai +  "= Angka Genap");
+ }
+}
+
+
+}else { 
+  hasil = console.log("Masukkan")
+}
+return hasil;
+}
+
+nilai1 = prompt(" Masukkan Angka minimum ")
+nilai2 = prompt(" Masukkan Angka Maximum ")
+
+console.log(GanjilGenap(nilai1,nilai2))
+
+
+
+5.
+function Jualan(name,age,money){
+
+var juice = 50000;
+var anggur = 300000;
+age= Number(age);
+money=Number(money);
+
+
+if (name!=="" && age!=="" && money!==""){
+    console.log("Nama = " + name);
+  if(age < 17){
+    console.log( "harga Minuman Juice = " + juice);
+    alert("Anda bisa pesan minum. Sisa uang anda =" + (money - juice));
+  }else{
+    if(age > 17){
+      console.log(" harga Minuman Anggur = " + anggur)
+      alert(" Anda bisa pesan minum. Sisa uang anda = " + (money - anggur));
+    }
+  }
+    if(money < juice && money < anggur){
+    alert("Uang tidak cukup. Anda harus pulang");
+  }
+
+}
+else{
+  alert ("Anda tidak boleh masuk!");
+ }
+}
+
+
+
+var name = prompt("Masukkan Nama Anda");
+var age = prompt("Masukkan Umur Anda");
+var money = prompt("Masukkan uang anda");
+
+console.log(Jualan(name,age,money));
+
+6. 
+function Deret(x,y){
+
+var jml = 0;
+for(i=1;i<=x;i++){
+ jml=jml+i;
+ }
+console.log("total penjumlahan = " +  jml);
+}
+var x = prompt("Masukkan Angka Terakhir :");
+console.log(Deret(x));
