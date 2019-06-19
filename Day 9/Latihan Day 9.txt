@@ -1,0 +1,42 @@
+1. function Angka(nilai1,nilai2){
+  var arr = [];
+  
+  for(i=nilai1; i<=nilai2; i++){
+      arr.push(i);
+   }
+return arr;
+}
+console.log(Angka(1,50));
+
+2.
+
+function NilaiGenap(nilai1,nilai2){
+  var arr = [];
+  
+  for(i=nilai1; i<=nilai2; i++){
+    if(i % 2 == 0)
+      arr.push(i);
+  }
+  return arr;
+}
+console.log(NilaiGenap(1,50));
+
+3. 
+
+function kaskus(angkaMinimal, angkaMaksimal){
+var kaskus = [];
+
+for(i=angkaMinimal; i<=angkaMaksimal; i++){
+    if(i % 15 == 0){
+	kaskus.push("KASKUS");
+    } else if(i % 6 == 0){
+	kaskus.push("KUS"); 
+    } else if(i % 3 == 0){
+	kaskus.push("KAS")
+    } else {
+      kaskus.push(i)
+      }
+    } 
+  return kaskus;
+}
+console.log(kaskus(1,15));
