@@ -1,0 +1,19 @@
+1.
+function arrayMultiDimensi(array,angka){
+  var arr = []
+  var nilai = 0;
+  
+  for (i = 0; i<array; i++){
+    arr.push([])
+  
+    for (y = 0; y<angka; y++){
+     nilai++;
+    arr[i].push(nilai)
+    }
+  }
+  return arr;
+ 
+}
+var array = prompt ("Masukkan Jumlah Array")
+var angka = prompt("masukkan Jumlah Nilai")
+console.log(arrayMultiDimensi(array,angka)) 
