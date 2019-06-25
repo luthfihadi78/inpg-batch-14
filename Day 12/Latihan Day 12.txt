@@ -1,0 +1,27 @@
+1. 
+var people = [
+  [1, 'Dimitri', 'Hacktiv8'],
+  [2, 'Dhani', 'Hacktiv8'],
+  [3, 'Icha', 'Hacktiv8']
+];
+   
+     for(var i=0; i<people.length; i++){
+      var id = people [i][0];
+       var name = people[i][1];
+        var company = people[i][2];
+
+       
+     console.log(` ID : ${id} Nama : ${name} Company :${company}`)
+  }
+
+
+
+2. var text = 'dimitri:dimitri@mail.com:male,icha:icha@mail.com:female,windi:windi@mail.com:female';
+var splitted = text.split(',')
+var tampung = []
+
+for (i = 0; i<splitted.length; i++){
+var splitted2 = splitted[i].split(':')
+console.log(splitted2); 
+}
+
