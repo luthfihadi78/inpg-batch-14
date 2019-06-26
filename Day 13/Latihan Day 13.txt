@@ -1,0 +1,26 @@
+function RemoveSpace(text){
+var splitted = text.split(" ")
+var arr = []
+for (i = 0; i<text.length; i++){
+ 
+    splitted2 = splitted  
+    }
+  
+return splitted2.join(arr)
+}
+console.log(RemoveSpace("bebe ksfsfsfsfsdfdfdf"))
+
+
+function ReverseText (text){
+ var t = text.split('')
+ var arr = []
+ for (..)
+  arr.push()
+}
+return arr.join ('')
+}
+
+function updateVawels(text){
+  var t = text.split('')
+  var arr = []
+}
