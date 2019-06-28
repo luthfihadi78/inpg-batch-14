@@ -8,17 +8,17 @@ for (i = 0; i<text.length; i++){
   
 return splitted2.join(arr)
 }
-console.log(RemoveSpace("bebe ksfsfsfsfsdfdfdf"))
+console.log(RemoveSpace("cobacoba ah"))
 
 
 function ReverseText (text){
- var t = text.split('')
  var arr = []
- for (..)
-  arr.push()
-}
+ for (i = text.length; i>=0; i--){
+  arr.push(text[i])
+  }
 return arr.join ('')
 }
+console.log(ReverseText("Hactiv8"))
 
 function updateVawels(text){
   var t = text.split('')
