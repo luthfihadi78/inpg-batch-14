@@ -1,0 +1,92 @@
+1. function compareNumbers (firstNumber, secondNumber) {
+  for(i=0; i<100; i++){
+   if(secondNumber > firstNumber){
+     var hasil = true;
+   }else if(secondNumber < firstNumber){
+     hasil = false;
+   }else if(secondNumber === firstNumber){
+     hasil = -1;
+   } else {
+     console.log("Masukan Nilai rentang 1- 100")
+   }  
+  } 
+  return hasil;
+}
+
+// TEST CASES
+console.log(compareNumbers(5, 8)); // true
+console.log(compareNumbers(5, 3)); // false
+console.log(compareNumbers(4, 4)); // -1
+console.log(compareNumbers(3, 3)); // -1
+console.log(compareNumbers(17, 2)); // false
+
+
+2. function reverseString (text) {
+  var arr = []
+  for(i=text.length; i>=0; i--){
+    arr.push(text[i]);
+  }
+  return arr.join('')
+}
+
+// TEST CASES
+console.log(reverseString("Hello World and Coders"));// sredoC dna dlroW olleH
+console.log(reverseString('John Doe')); // eoD nhoJ
+console.log(reverseString('I am a bookworm')); // mrowkoob a ma I
+console.log(reverseString('Coding is my hobby')); // ybboh ym si gnidoC
+console.log(reverseString('Super')); // repuS
+
+3. 
+function sortByCharacter(str) {
+	
+	var tampungWords = [];
+	for (var i = 0; i < str.length; i++) {
+		for (var j = 0; j < str[i].length; j++) {
+			if (str[i] !== str[j]) {
+				tampungWords.push(str[i][j]);
+			} else {
+				tampungWords.push(str[i]);
+			}
+		}
+	}
+	
+	var isWords = 0;
+	for (var x = 0; x < tampungWords.length; x++) {
+		for (var y = 0; y < tampungWords.length; y++) {
+			if (tampungWords[y] > tampungWords[y + 1]) {
+				isWords = tampungWords[y];
+				tampungWords[y] = tampungWords[y + 1];
+				tampungWords[y + 1] = isWords;
+			}
+		}
+	}
+	var hasilWords = '';
+	for (var k = 0; k < tampungWords.length; k++) {
+		hasilWords += tampungWords[k];
+	}
+	return hasilWords;
+}
+
+// TEST CASES
+console.log(sortByCharacter('hello')); // 'ehllo'
+console.log(sortByCharacter('truncate')); // 'acenrttu'
+console.log(sortByCharacter('developer')); // 'deeeloprv'
+console.log(sortByCharacter('software')); // 'aeforstw'
+console.log(sortByCharacter('aegis')); // 'aegis'
+
+
+4. 
+
+function isArithmeticProgression (numbers) {
+ for (var i=0; i<numbers.length; i++){
+    return numbers[i+1] - numbers[i] === numbers[numbers.length-1] -  numbers[numbers.length-2];
+  }
+}
+
+
+// TEST CASES
+console.log(isArithmeticProgression([1, 2, 3, 4, 5, 6])); // true
+console.log(isArithmeticProgression([2, 4, 6, 12, 24])); // false
+console.log(isArithmeticProgression([2, 4, 6, 8])); // true
+console.log(isArithmeticProgression([2, 6, 18, 54])); // false
+console.log(isArithmeticProgression([1, 2, 3, 4, 7, 9])); // false
