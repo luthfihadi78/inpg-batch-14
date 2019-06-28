@@ -1,0 +1,12 @@
+function square(number) {
+    return number * number
+}
+
+function pi() {
+    return Math.PI.toFixed(2)
+}
+
+var luaslingkaran = pi() * square(7);
+var lingkaran = Math.round(luaslingkaran);
+
+console.log(lingkaran); // 154
