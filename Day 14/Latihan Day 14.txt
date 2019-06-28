@@ -75,6 +75,7 @@ console.log(sortByCharacter('software')); // 'aeforstw'
 console.log(sortByCharacter('aegis')); // 'aegis'
 
 
+
 4. 
 
 function isArithmeticProgression (numbers) {
@@ -90,3 +91,29 @@ console.log(isArithmeticProgression([2, 4, 6, 12, 24])); // false
 console.log(isArithmeticProgression([2, 4, 6, 8])); // true
 console.log(isArithmeticProgression([2, 6, 18, 54])); // false
 console.log(isArithmeticProgression([1, 2, 3, 4, 7, 9])); // false
+
+
+//cara Ndaru
+
+var arr1 =[2, 4, 6, 12, 24];
+var arr2 =[1, 2, 3, 4, 5, 6];
+var arr3 =[2, 4, 6, 12, 24];
+var arr4 =[2, 4, 6, 8];
+var arr5 =[2, 6, 18, 54];
+var arr6 =[1, 2, 3, 4, 7, 9];
+var number=0;
+    function isArithmeticProgression(arr){
+        for (var i=0;i<arr.length-2;i++){
+             if(arr[i+1]-arr[i]===arr[i+2]-arr[i+1]){
+                 number++;
+            }
+            else return false;
+        }
+        return true;
+     }    
+ console.log(isArithmeticProgression(arr1));
+ console.log(isArithmeticProgression(arr2));
+ console.log(isArithmeticProgression(arr3));
+ console.log(isArithmeticProgression(arr4));
+ console.log(isArithmeticProgression(arr5));
+ console.log(isArithmeticProgression(arr6));
