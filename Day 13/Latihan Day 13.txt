@@ -20,7 +20,24 @@ return arr.join ('')
 }
 console.log(ReverseText("Hactiv8"))
 
-function updateVawels(text){
-  var t = text.split('')
+
+function updateVowels(text){
   var arr = []
+  
+  var abjad1 = ["a","i","u","e","o"];
+  var abjad2 = ["b","j","v","f","p"];
+  
+  for(i=0; i<text.length; i++){
+    var tampung = text[i];
+    for(y=0; y<abjad1.length; y++){
+      if(text[i]===abjad1[y]){
+        tampung = abjad2[y];
+      }
+    }
+    arr.push(tampung)
+  }
+  return arr.join('')
+  
 }
+
+console.log(updateVowels("aiueo"))
