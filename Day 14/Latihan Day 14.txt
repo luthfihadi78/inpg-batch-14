@@ -52,9 +52,11 @@ console.log(sortByCharacter('aegis')); // 'aegis'
 
 4. 
 
+
 function isArithmeticProgression (numbers) {
  for (var i=0; i<numbers.length; i++){
-    return numbers[i+1] - numbers[i] === numbers[numbers.length-1] -  numbers[numbers.length-2];
+   var rumus = numbers[i+1] - numbers[i] === numbers[numbers.length-1] -  numbers[numbers.length-2];
+   return rumus
   }
 }
 
