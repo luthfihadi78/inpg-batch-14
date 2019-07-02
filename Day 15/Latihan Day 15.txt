@@ -1,0 +1,67 @@
+1. function threeStepsAB (text) {
+  // Your code here
+  var ketemuA;
+  var ketemuB;
+  
+  for(i=0; i<text.length; i++){
+    if(text[i] === "a"){
+      ketemuA = i
+      console.log(ketemuA)
+    }else if(text[i] ==="b"){
+       ketemuB = i
+       console.log(ketemuB)
+     } 
+    }
+  var hasilA = ketemuA - ketemuB;
+  var hasilB = ketemuB - ketemuA;
+  var total = hasilA === 4 || hasilB === 4
+  return total
+  }
+  
+  
+
+// TEST CASES
+console.log(threeStepsAB('lane borrowed')); // true
+console.log(threeStepsAB('i am sick')); // false
+console.log(threeStepsAB('you are boring')); // true
+console.log(threeStepsAB('barbarian')); // true
+console.log(threeStepsAB('bacon and meat')); // false
+
+
+
+2. function gcd (firstNumber, secondNumber) {
+  // Your code here
+  
+  for(i=0; i<firstNumber && secondNumber; i++){
+    if(firstNumber % i === 0 && secondNumber % i === 0){
+    var result = i; 
+    }
+  }
+  return result;
+}
+
+// TEST CASES
+console.log(gcd(12, 16)); // 4
+console.log(gcd(50, 40)); // 10
+console.log(gcd(22, 99)); // 11
+console.log(gcd(24, 36)); // 12
+console.log(gcd(17, 23)); // 1
+
+
+3. function isPrime (number) {
+  // Your code here
+  var hasil = true;
+  for(i=3; i<number; i++){
+    if(number % i === 0){
+      var hasil = false;
+    }
+  }
+  return hasil;
+}
+
+// TEST CASES
+console.log(isPrime(3)); // true
+console.log(isPrime(7)); // true
+console.log(isPrime(6)); // false
+console.log(isPrime(23)); // true
+console.log(isPrime(33)); // false
