@@ -1,0 +1,52 @@
+1. function grouping (scores) {
+  var pass =[];
+  var fail =[];
+  var tampung =[];
+  for(i=0; i<scores.length; i++){
+    if(scores[i] >= 75){
+      pass.push(scores[i])
+    }else{
+      fail.push(scores[i])
+    }
+  }
+  tampung[0] = "pass : " + pass
+  tampung[1] = "fail : " + fail
+  
+  return tampung;
+}
+
+console.log(grouping([80, 45, 90, 65, 74, 100, 85, 30]));
+// { pass: [ 80, 90, 100, 85 ], fail: [ 45, 65, 74, 30 ] }
+
+console.log(grouping([]));
+// { pass: [], fail: [] }
+
+2. 
+function convert(data){
+  for(var i=0; i<data.length;i++){
+    console.log(" id : " + data[i][0]);
+    console.log(" firstName : " + data[i][1]);
+    console.log(" lastName :" + data[i][2]);
+    console.log(" email :" + data[i][3]);
+    console.log(" ---------------------------");
+  }
+}
+
+// TEST CASES
+console.log(convert([
+  [1, 'Dimitri', 'Wahyudiputra', 'dimitri@mail.com'],
+  [2, 'Sergei', 'Dragunov', 'sergei@mail.com']
+]));
+
+/*
+[ { id: 1,
+    firstName: 'Dimitri',
+    lastName: 'Wahyudiputra',
+    email: 'dimitri@mail.com' },
+  { id: 2,
+    firstName: 'Sergei',
+    lastName: 'Dragunov',
+    email: 'sergei@mail.com' } ]
+*/
+
+
