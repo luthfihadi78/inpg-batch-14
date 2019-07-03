@@ -1,18 +1,17 @@
-1. function grouping (scores) {
-  var pass =[];
-  var fail =[];
-  var tampung =[];
+1.function grouping (scores) {
+  
+  var hasil = {
+  pass : [],fail : [],
+  }
   for(i=0; i<scores.length; i++){
     if(scores[i] >= 75){
-      pass.push(scores[i])
+      hasil.pass.push(scores[i])
     }else{
-      fail.push(scores[i])
+      hasil.fail.push(scores[i])
     }
   }
-  tampung[0] = "pass : " + pass
-  tampung[1] = "fail : " + fail
   
-  return tampung;
+  return hasil;
 }
 
 console.log(grouping([80, 45, 90, 65, 74, 100, 85, 30]));
@@ -21,16 +20,20 @@ console.log(grouping([80, 45, 90, 65, 74, 100, 85, 30]));
 console.log(grouping([]));
 // { pass: [], fail: [] }
 
+
 2. 
 function convert(data){
+  var tampung = [] 
   for(var i=0; i<data.length;i++){
-    console.log(" id : " + data[i][0],
-    " firstName : " + data[i][1],
-    " lastName :" + data[i][2],
-    " email :" + data[i][3]);
-    console.log(" ---------------------------");
+    var hasil = {
+    id: data[i][0],
+    firstName: data[i][1],
+    lastName: data[i][2],
+    email: data[i][3],
+    }
+    tampung.push(hasil)
   }
-  return data
+ return tampung
 }
 
 // TEST CASES
