@@ -24,10 +24,10 @@ console.log(grouping([]));
 2. 
 function convert(data){
   for(var i=0; i<data.length;i++){
-    console.log(" id : " + data[i][0]);
-    console.log(" firstName : " + data[i][1]);
-    console.log(" lastName :" + data[i][2]);
-    console.log(" email :" + data[i][3]);
+    console.log(" id : " + data[i][0],
+    " firstName : " + data[i][1],
+    " lastName :" + data[i][2],
+    " email :" + data[i][3]);
     console.log(" ---------------------------");
   }
   return data
@@ -49,5 +49,3 @@ console.log(convert([
     lastName: 'Dragunov',
     email: 'sergei@mail.com' } ]
 */
-
-
