@@ -50,4 +50,28 @@ console.log(deleteUndefinedKeys({
 }));
 // {}
 
-3. 
+3. function complexConversion (text) {
+  // Your code here
+
+var splitted = text.split(',')
+var tampung = {}
+
+for (i = 0; i<splitted.length; i++){
+var splitted2 = splitted[i].split(':')
+var key = splitted2[0];
+var value = splitted2[1];
+tampung[key]=value;
+  }
+  return tampung;
+}
+
+    
+    // TEST CASES
+console.log(complexConversion('name:Dimitri,email:dimitri@mail.com'));
+// { name: 'Dimitri', email: 'dimitri@mail.com' }
+
+console.log(complexConversion('name:Erwin,gender:male,age:21'));
+// { name: 'Erwin', gender: 'male', age: '21' }
+
+console.log(complexConversion('city:Surabaya,province:East Java'));
+// { city: 'Surabaya', province: 'East Java' }
