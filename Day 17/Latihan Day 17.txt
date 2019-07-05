@@ -1,0 +1,53 @@
+1. function csvToObject (text) {
+  // Your code here
+ 
+ var splitted = text.split(",");
+  for(i=0; i<text.length; i++){
+  var input = {
+   name :splitted[0],
+   email :splitted[1],
+   gender :splitted[2], 
+   }
+  }
+ return input
+  
+    }
+  
+
+// TEST CASES
+console.log(csvToObject('Dimitri,dimitri@mail.com,male'));
+// { name: 'Dimitri', email: 'dimitri@mail.com', gender: 'male' }
+
+console.log(csvToObject('Icha,icha@mail.com,female'));
+// { name: 'Icha', email: 'icha@mail.com', gender: 'female' }
+
+console.log(csvToObject('Dhani,dhani@mail.com,male'));
+// { name: 'Dhani', email: 'dhani@mail.com', gender: 'male' }
+
+2. function deleteUndefinedKeys (object) {
+  // Your code here
+
+const newObject = Object.keys(object).reduce((acc, key) => {
+  const _acc = acc;
+  if (object[key] !== undefined) _acc[key] = object[key];
+  return _acc;
+}, {})
+
+console.log(newObject)
+}
+
+console.log(deleteUndefinedKeys({
+  name: 'Dimitri',
+  age: undefined,
+  email: 'dimitri@mail.com'
+}));
+// { name: 'Dimitri', email: 'dimitri@mail.com' }
+
+console.log(deleteUndefinedKeys({
+  name: undefined,
+  age: undefined,
+  email: undefined
+}));
+// {}
+
+3. 
